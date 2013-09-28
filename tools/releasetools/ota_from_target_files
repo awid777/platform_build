@@ -55,7 +55,6 @@ Usage:  ota_from_target_files [flags] input_target_files output_ota_package
   --backup <boolean>
       Enable or disable the execution of backuptool.sh.
       Disabled by default.
-
 """
 
 import sys
