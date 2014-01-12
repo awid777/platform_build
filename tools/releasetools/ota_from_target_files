@@ -454,9 +454,9 @@ def WriteFullOTAPackage(input_zip, output_zip):
   script.ShowProgress(0.5, 0)
   script.Print("")
   script.Print("")
-  script.Print("BeerGang ROMs")
+  script.Print(" Welcome to Hydrogen ")
   script.Print("")
-  script.Print(" we iz slutz ")
+  script.Print(" What will become of this? ")
   script.Print("")
 
   if OPTIONS.wipe_user_data:
