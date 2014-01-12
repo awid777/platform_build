@@ -37,20 +37,21 @@ endif
 #TOPDIR := $(TOP)/
 #endif
 
+# We can build with newer versions of make
 # Check for broken versions of make.
 # (Allow any version under Cygwin since we don't actually build the platform there.)
-ifeq (,$(findstring CYGWIN,$(shell uname -sm)))
-ifeq (0,$(shell expr $$(echo $(MAKE_VERSION) | sed "s/[^0-9\.].*//") = 3.81))
-ifeq (0,$(shell expr $$(echo $(MAKE_VERSION) | sed "s/[^0-9\.].*//") = 3.82))
-$(warning ********************************************************************************)
-$(warning *  You are using version $(MAKE_VERSION) of make.)
-$(warning *  Android can only be built by versions 3.81 and 3.82.)
-$(warning *  see https://source.android.com/source/download.html)
-$(warning ********************************************************************************)
-$(error stopping)
-endif
-endif
-endif
+#ifeq (,$(findstring CYGWIN,$(shell uname -sm)))
+#ifeq (0,$(shell expr $$(echo $(MAKE_VERSION) | sed "s/[^0-9\.].*//") = 3.81))
+#ifeq (0,$(shell expr $$(echo $(MAKE_VERSION) | sed "s/[^0-9\.].*//") = 3.82))
+#$(warning ********************************************************************************)
+#$(warning *  You are using version $(MAKE_VERSION) of make.)
+#$(warning *  Android can only be built by versions 3.81 and 3.82.)
+#$(warning *  see https://source.android.com/source/download.html)
+#$(warning ********************************************************************************)
+#$(error stopping)
+#endif
+#endif
+#endif
 
 # Absolute path of the present working direcotry.
 # This overrides the shell variable $PWD, which does not necessarily points to
