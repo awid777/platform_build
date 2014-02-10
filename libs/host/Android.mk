@@ -24,3 +24,5 @@ include $(BUILD_HOST_STATIC_LIBRARY)
 
 # Include toolchain prebuilt modules if they exist.
 -include $(TARGET_TOOLCHAIN_ROOT)/toolchain.mk
+
+#wild and crazy changes
